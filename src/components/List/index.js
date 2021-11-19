@@ -6,9 +6,6 @@ function List() {
     <ListContainer>
       <h2>Overview</h2>
       <Item />
-      <Item />
-      <Item />
-      <Item />
     </ListContainer>
   )
 }

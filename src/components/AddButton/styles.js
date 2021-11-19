@@ -17,7 +17,7 @@ export const Button = styled.button`
   cursor: pointer;
   width: 60px;
   height: 60px;
-  font-size: 72px;
+  font-size: 52px;
 
   display: flex;
   justify-content: center;

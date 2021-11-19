@@ -1,10 +1,18 @@
+import { useState } from 'react'
+import AddFormModal from '../AddFormModal'
 import { ButtonContainer, Button } from './styles'
 
 function AddButton() {
+
+  const [ isModalOpen, setIsModalOpen ] = useState(false); 
+
   return (
-    <ButtonContainer>
-      <Button>+</Button>
-    </ButtonContainer>
+    <>
+      <AddFormModal isOpen={isModalOpen} onCloseModal={() => setIsModalOpen(false)}/>
+      <ButtonContainer>
+        <Button onClick={() => setIsModalOpen(prevState => !prevState)}>+</Button>
+      </ButtonContainer>
+    </>
   )
 }
 
