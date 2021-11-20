@@ -17,6 +17,10 @@ export const Button = styled.button`
 
   background: var(--yellow);
   color: #fff;
-
   border-radius: 50px;
+
+  @media (max-width: 720px) {
+    width: 50px;
+    height: 50px;
+  }
 `

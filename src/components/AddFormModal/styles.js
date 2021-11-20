@@ -36,18 +36,18 @@ export const Container = styled.div`
     flex-direction: column;
 
     button {
-    height: 40px;
-    margin: 40px 0;
+      height: 40px;
+      margin: 40px 0;
 
-    border: none;
-    outline: none;
-    cursor: pointer;
+      border: none;
+      outline: none;
+      cursor: pointer;
 
-    border-radius: 10px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    color: #000;
-    background: var(--green);
-  }
+      border-radius: 10px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      color: #000;
+      background: var(--green);
+    }
   }
 `
