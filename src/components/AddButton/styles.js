@@ -1,17 +1,9 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.div`
-  padding-bottom: 50px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 0 auto;
-  background: var(--secondary);
-`
-
 export const Button = styled.button`
+  position: absolute;
+  left: 50%;
+  top: 90%;
   border: none;
   outline: none;
   cursor: pointer;

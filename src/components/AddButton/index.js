@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import AddFormModal from '../AddFormModal'
-import { ButtonContainer, Button } from './styles'
+import { Button } from './styles'
 
 function AddButton() {
 
@@ -9,9 +9,7 @@ function AddButton() {
   return (
     <>
       <AddFormModal isOpen={isModalOpen} onCloseModal={() => setIsModalOpen(false)}/>
-      <ButtonContainer>
-        <Button onClick={() => setIsModalOpen(prevState => !prevState)}>+</Button>
-      </ButtonContainer>
+      <Button onClick={() => setIsModalOpen(prevState => !prevState)}>+</Button>
     </>
   )
 }

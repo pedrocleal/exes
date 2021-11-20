@@ -13,8 +13,18 @@ export const Container = styled.div`
 
   background: var(--secondary);
 
+  @media (min-width: 720px) {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   strong {
     font-size: 24px;
     font-weight: 800;
+    color: var(--yellow);
   }
 `

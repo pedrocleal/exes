@@ -10,12 +10,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    overflow-y: hidden;
     padding: 0px;
     margin: 0;
     box-sizing: border-box;
     background: var(--primary);
     color: #fff;
 
-    font-family: 'Nunito', sans-serif
+    font-family: 'Nunito', sans-serif;
   }
 `

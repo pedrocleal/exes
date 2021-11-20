@@ -1,4 +1,4 @@
-import { ListContainer } from './styles';
+import { ListContainer, Container } from './styles';
 import Item from "../Item"
 
 import { useItems } from '../../contexts/ItemsContext';
@@ -7,17 +7,19 @@ function List() {
   const { items } = useItems();
 
   return (
-    <ListContainer>
+    <Container>
       <h2>Overview</h2>
-      {items.map((item) => (
-        <Item
-          key={item.id}
-          id={item.id}
-          title={item.title}
-          value={item.value}
-        />
-      ))}
-    </ListContainer>
+      <ListContainer>
+        {items.map((item) => (
+          <Item
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            value={item.value}
+          />
+        ))}
+      </ListContainer>
+    </Container>
   )
 }
 

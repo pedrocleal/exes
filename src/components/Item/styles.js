@@ -10,4 +10,8 @@ export const ItemBox = styled.div`
 
   background: var(--primary);
   border-radius: 15px;
+
+  span {
+    font-size: 18px;
+  }
 `

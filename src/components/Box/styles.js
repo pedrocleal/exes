@@ -3,6 +3,13 @@ import styled from "styled-components";
 export const BoxesSection = styled.section`
   display: flex;
   padding: 20px;
+
+  @media (min-width: 720px) {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const BoxContainer = styled.div`
