@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactDom from "react-dom";
+import { useItems } from "../../contexts/ItemsContext";
 import Input from "../Input";
 import { Container, Overlay } from "./styles";
 
@@ -11,10 +12,25 @@ const initialValues = {
 function AddFormModal({ isOpen, onCloseModal }) {
 
   const [ inputValues, setInputValues ] = useState(initialValues);
+  const { items, setItems } = useItems();
+
+  useEffect(() => { localStorage.setItem('items', JSON.stringify(items))}, [items]);
+
+  function handleAddItem() {
+    setItems((prevState) => [
+      {
+        id: items.length + 1,
+        title: inputValues.title,
+        value: inputValues.value
+      },
+      ...prevState
+    ])
+  }
 
   function handleFormSubmit(e) {
     e.preventDefault()
     onCloseModal();
+    handleAddItem();
   }
 
   function handleInputChange(e) {
@@ -37,7 +53,7 @@ function AddFormModal({ isOpen, onCloseModal }) {
         <h2>Add new income/outcome</h2>
         <form onSubmit={handleFormSubmit}>
           <Input name="title" onChange={handleInputChange} label="Title"/>
-          <Input name="value" onChange={handleInputChange} label="Value"/>
+          <Input type="number" name="value" onChange={handleInputChange} label="Value"/>
           <button>Adicionar</button>
         </form>
       </Container>

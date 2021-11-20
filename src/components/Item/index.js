@@ -1,10 +1,10 @@
 import { ItemBox } from './styles';
 
-function Item() {
+function Item({ title, value}) {
   return (
     <ItemBox>
-      <span>Salário</span>
-      <strong>R$1200,00</strong>
+      <span>{title}</span>
+      <strong style={{ color: value > 0 ? '#41EAD4' : '#F71735'}}>R${value}</strong>
     </ItemBox>
   )
 }
