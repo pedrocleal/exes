@@ -26,6 +26,10 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: 720px) {
+    margin: 30px;
+  }
+  
   h2 {
     text-align: center;
     margin-bottom: 50px;

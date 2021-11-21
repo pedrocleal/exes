@@ -16,12 +16,12 @@ function Box() {
   return (
     <BoxesSection>
       <BoxContainer color={'green'}>
-        <h3>Incomes</h3>
+        <h3>Receitas</h3>
         <h2>R$ {totalIncomes}</h2>
       </BoxContainer>
 
       <BoxContainer>
-        <h3>Outcomes</h3>
+        <h3>Despesas</h3>
         <h2>R$ {totalOutcomes}</h2>
       </BoxContainer>
     </BoxesSection>

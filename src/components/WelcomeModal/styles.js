@@ -28,11 +28,17 @@ export const Container = styled.div`
   }
 
   h2 {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   @media (max-width: 720px) {
     margin: 20px;
+  }
+
+  @media (max-height: 720px) {
+    h2 {
+      font-size: 22px;
+    }
   }
 `
 
@@ -51,7 +57,7 @@ export const InputContainer = styled.div`
   button {
     height: 40px;
     width: 100px;
-    margin: 30px 0;
+    margin: 15px 0;
 
     border: none;
     outline: none;

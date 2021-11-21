@@ -22,5 +22,7 @@ export const Button = styled.button`
   @media (max-width: 720px) {
     width: 50px;
     height: 50px;
+
+    margin: 0 auto;
   }
 `

@@ -13,8 +13,13 @@ export const BoxesSection = styled.section`
 `
 
 export const BoxContainer = styled.div`
-  width: 160px;
+  width: 180px;
   height: 140px;
+
+  @media (max-height: 750px) {
+    height: 110px;
+  }
+  
   margin-right: 30px;
   padding: 20px;
   border-radius: 20px;
@@ -26,6 +31,6 @@ export const BoxContainer = styled.div`
   };
 
   h3 {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 `

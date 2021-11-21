@@ -13,8 +13,8 @@ function UserData() {
   
   return (
     <Container>
-      <p>Hello, <strong>{userName}</strong></p>
-      <p>My Balance: <strong style={{ color: balance > 0 ? '#41EAD4' : '#F71735'}}>R$ {balance},00</strong></p>
+      <p>Bem-vindo, <strong>{userName}</strong></p>
+      <p>Meu Saldo: <strong style={{ color: balance > 0 ? '#41EAD4' : '#F71735'}}>R$ {balance},00</strong></p>
     </Container>
   )
 }

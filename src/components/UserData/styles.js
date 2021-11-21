@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   padding: 20px; 
   margin: 30px 30px 10px 20px;
-
   font-size: 18px;
-
   width: 280px;
-  height: 100px;
-
+  height: 80px;
   border-radius: 20px;
+
+  p {
+    margin-top: 0;
+  }
 
   background: var(--secondary);
 

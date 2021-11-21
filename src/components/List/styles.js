@@ -4,14 +4,15 @@ export const Container = styled.section`
   background: var(--secondary);
   border-radius: 20px 20px 0 0;
   text-align: center;
-  height: 550px;
+  height: 100vh;
+  scroll-behavior: unset; 
   
   h2 {
     padding-top: 20px;
   }
 
   @media (min-width: 720px) {
-    max-width: 1024px;
+    max-width: 720px;
     width: 100%;
     margin: 0 auto;
   }

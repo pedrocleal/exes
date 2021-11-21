@@ -8,7 +8,7 @@ function List() {
 
   return (
     <Container>
-      <h2>Overview</h2>
+      <h2>Visão Geral</h2>
       <ListContainer>
         {items.map((item) => (
           <Item
