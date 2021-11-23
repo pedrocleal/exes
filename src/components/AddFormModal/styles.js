@@ -32,12 +32,23 @@ export const Container = styled.div`
   
   h2 {
     text-align: center;
-    margin-bottom: 50px;
+  }
+
+  p {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--yellow);
   }
 
   form {
     display: flex;
     flex-direction: column;
+
+    input {
+      margin-top: 10px;
+    }
 
     button {
       height: 40px;

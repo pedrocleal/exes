@@ -20,7 +20,7 @@ export const BoxContainer = styled.div`
     height: 110px;
   }
   
-  margin-right: 30px;
+  margin-right: 20px;
   padding: 20px;
   border-radius: 20px;
 

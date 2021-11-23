@@ -5,7 +5,7 @@ export const Container = styled.section`
   border-radius: 20px 20px 0 0;
   text-align: center;
   height: 100vh;
-  scroll-behavior: unset; 
+  
   
   h2 {
     padding-top: 20px;
@@ -33,6 +33,7 @@ export const ListContainer = styled.div`
   }
 
   max-height: 400px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

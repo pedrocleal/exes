@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   padding: 20px; 
   margin: 30px 30px 10px 20px;
-  font-size: 18px;
-  width: 280px;
+  font-size: 16px;
+  width: 80%;
   height: 80px;
   border-radius: 20px;
 
@@ -17,6 +17,8 @@ export const Container = styled.div`
   @media (min-width: 720px) {
     margin: 0 auto;
     margin-top: 30px;
+
+    width: 280px;
     display: flex;
     justify-content: center;
     align-items: flex-start;

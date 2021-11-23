@@ -40,6 +40,12 @@ export const Container = styled.div`
       font-size: 22px;
     }
   }
+
+  @media (max-width: 520px) {
+    h2 {
+      font-size: 22px;
+    }
+  }
 `
 
 export const InputContainer = styled.div`

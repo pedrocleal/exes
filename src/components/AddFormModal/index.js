@@ -50,10 +50,20 @@ function AddFormModal({ isOpen, onCloseModal }) {
   return ReactDom.createPortal(
     <Overlay>
       <Container>
-        <h2>Add new income/outcome</h2>
+        <h2>Adicione uma nova receita/despesa</h2>
+        <p>*para despesas, adicione o sinal de negativo no ínicio do campo "Valor"</p>
         <form onSubmit={handleFormSubmit}>
-          <Input name="title" onChange={handleInputChange} label="Title"/>
-          <Input type="number" name="value" onChange={handleInputChange} label="Value"/>
+          <Input 
+            name="title" 
+            onChange={handleInputChange} 
+            label="Título" 
+            placeholder="Ex: Salário"/>
+          <Input 
+            type="number" 
+            name="value" 
+            onChange={handleInputChange} 
+            label="Valor" 
+            placeholder="Ex: 1000"/>
           <button>Adicionar</button>
         </form>
       </Container>

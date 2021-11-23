@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  position: absolute;
-  left: 50%;
+  position: fixed;
+  left: 48.9%;
   top: 90%;
   border: none;
   outline: none;
@@ -19,10 +19,12 @@ export const Button = styled.button`
   color: #fff;
   border-radius: 50px;
 
-  @media (max-width: 720px) {
+  @media (max-width: 420px) {
     width: 50px;
     height: 50px;
+    font-size: 28px;
 
-    margin: 0 auto;
+    top: 90%;
+    left: 45%;
   }
 `
