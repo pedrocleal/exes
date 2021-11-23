@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   position: fixed;
-  left: 48.9%;
+  left: 50%;
   top: 90%;
   border: none;
   outline: none;
   cursor: pointer;
-  width: 60px;
-  height: 60px;
-  font-size: 52px;
+  width: 40px;
+  height: 40px;
+  font-size: 42px;
 
   display: flex;
   justify-content: center;
@@ -17,11 +17,9 @@ export const Button = styled.button`
 
   background: var(--yellow);
   color: #fff;
-  border-radius: 50px;
+  border-radius: 15px;
 
   @media (max-width: 420px) {
-    width: 50px;
-    height: 50px;
     font-size: 28px;
 
     top: 90%;
