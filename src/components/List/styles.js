@@ -4,8 +4,7 @@ export const Container = styled.section`
   background: var(--secondary);
   border-radius: 20px 20px 0 0;
   text-align: center;
-  height: 100vh;
-  
+  height: 100vh;  
   
   h2 {
     padding-top: 20px;
@@ -31,8 +30,6 @@ export const ListContainer = styled.div`
     border-radius: 10px;
     background-color: #FFB652;
   }
-
-  max-height: 400px;
 
   display: flex;
   flex-direction: column;

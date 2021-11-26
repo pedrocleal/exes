@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    overflow-y: hidden;
+    height: 100vh;
     padding: 0px;
     margin: 0;
     box-sizing: border-box;

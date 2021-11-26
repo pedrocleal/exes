@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const ItemBox = styled.div` 
   padding: 20px;
-  margin: 20px;
+  margin: 15px;
 
   display: flex;
   align-items: center;
