@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   background: var(--secondary);
+  min-height: 60vh;
+  height: 100%;
   border-radius: 20px 20px 0 0;
   text-align: center;
-  height: 100vh;  
   
   h2 {
     padding-top: 20px;
@@ -18,7 +19,11 @@ export const Container = styled.section`
 `
 
 export const ListContainer = styled.div`
-  ::-webkit-scrollbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+    ::-webkit-scrollbar {
     width: 5px;
   }
 
@@ -30,11 +35,4 @@ export const ListContainer = styled.div`
     border-radius: 10px;
     background-color: #FFB652;
   }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  overflow-y: auto;
-  scroll-behavior: smooth;
 `
