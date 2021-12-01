@@ -30,6 +30,6 @@ yarn install
 yarn start
 ```
 
-![exes-mobile.jpg](https://user-images.githubusercontent.com/53502542/143516883-8c53411b-dea1-48e0-af13-2b4d5e24ebcd.png)
+![exes](https://user-images.githubusercontent.com/53502542/144300107-4315e627-c736-4783-bd24-1cdfbbe35e0d.png)
 
 [⬆ Voltar ao topo](#exes)<br>
