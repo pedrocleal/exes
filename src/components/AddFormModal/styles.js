@@ -15,6 +15,27 @@ export const Overlay = styled.div`
 `
 
 export const Container = styled.div`
+
+  .closeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid var(--yellow);
+    background: var(--yellow);
+    color: #fff;
+    font-weight: 700;
+
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+  }
+
   position: relative;
 
   background-color: var(--primary);

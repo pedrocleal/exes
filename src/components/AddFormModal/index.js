@@ -19,7 +19,7 @@ function AddFormModal({ isOpen, onCloseModal }) {
   function handleAddItem() {
     setItems((prevState) => [
       {
-        id: items.length + 1,
+        id: Math.round(Math.random() * 100),
         title: inputValues.title,
         value: inputValues.value
       },
@@ -50,6 +50,7 @@ function AddFormModal({ isOpen, onCloseModal }) {
   return ReactDom.createPortal(
     <Overlay>
       <Container>
+        <button className="closeBtn" onClick={() => onCloseModal()}>X</button>
         <h2>Adicione uma nova receita/despesa</h2>
         <p>*para despesas, adicione o sinal de negativo no ínicio do campo "Valor"</p>
         <form onSubmit={handleFormSubmit}>

@@ -8,7 +8,10 @@ function AddButton() {
 
   return (
     <>
-      <AddFormModal isOpen={isModalOpen} onCloseModal={() => setIsModalOpen(false)}/>
+      <AddFormModal 
+        isOpen={isModalOpen} 
+        onCloseModal={() => setIsModalOpen(false)}
+      />
       <Button onClick={() => setIsModalOpen(prevState => !prevState)}>+</Button>
     </>
   )
